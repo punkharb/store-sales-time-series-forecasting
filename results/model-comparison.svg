@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="390" viewBox="0 0 920 390" role="img" aria-labelledby="title desc">
+  <title id="title">Validation RMSLE model comparison</title>
+  <desc id="desc">Horizontal bar chart. Lower RMSLE is better. Lag 28 plus stores and holidays has the lowest validation score, 0.41914.</desc>
+  <rect width="920" height="390" fill="#ffffff"/>
+  <text x="24" y="34" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Model comparison on one 16-day validation window</text>
+  <text x="24" y="58" font-family="Arial, sans-serif" font-size="14" fill="#475569">RMSLE — lower is better</text>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#0f172a">
+    <text x="24" y="105">CatBoost</text>
+    <text x="24" y="160">Weekday baseline</text>
+    <text x="24" y="215">Hybrid</text>
+    <text x="24" y="270">Lag 28</text>
+    <text x="24" y="325">Lag 28 + stores + holidays</text>
+  </g>
+  <g>
+    <rect x="245" y="84" width="557" height="28" rx="4" fill="#94a3b8"/>
+    <rect x="245" y="139" width="531" height="28" rx="4" fill="#94a3b8"/>
+    <rect x="245" y="194" width="468" height="28" rx="4" fill="#f59e0b"/>
+    <rect x="245" y="249" width="425" height="28" rx="4" fill="#60a5fa"/>
+    <rect x="245" y="304" width="419" height="28" rx="4" fill="#22c55e"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">
+    <text x="810" y="104">0.55713</text>
+    <text x="784" y="159">0.53113</text>
+    <text x="721" y="214">0.46769</text>
+    <text x="678" y="269">0.42516</text>
+    <text x="672" y="324">0.41914</text>
+  </g>
+  <text x="24" y="372" font-family="Arial, sans-serif" font-size="13" fill="#64748b">The best local score did not produce the best Kaggle public score.</text>
+</svg>
