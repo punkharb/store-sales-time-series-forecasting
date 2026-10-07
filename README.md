@@ -31,6 +31,8 @@ These are recorded results from my notebook runs and Kaggle submissions.
 
 ![Validation model comparison](results/model-comparison.svg)
 
+All validation scores came from one 16-day window (31 July–15 August 2017). I used that same window to compare models and for CatBoost early stopping, so these are tuned validation results, not an untouched test score.
+
 The last model looked best on my validation period but became worse on Kaggle. Possible reasons are that I tested many ideas on the same 16-day window or that my validation and final prediction pipelines were not perfectly matched. One public score is not enough to prove the exact cause.
 
 I kept the simpler hybrid model as my final result because it had the better Kaggle score.
@@ -43,6 +45,8 @@ I kept the simpler hybrid model as my final result because it had the better Kag
 - Extra data can add noise. Oil price made validation worse, so I removed it.
 - A better validation score does not guarantee a better future forecast.
 - Next time I would use several rolling validation windows before choosing the final model.
+
+Sales were higher on weekends, and promoted items tended to sell more in the exploratory data. These are associations, not proof that promotions caused the increase; they may still help frame inventory-planning questions.
 
 ## Files
 
@@ -62,7 +66,7 @@ oil.csv
 sample_submission.csv
 ```
 
-The data is not included in this repository. After attaching it, run the notebook from top to bottom.
+The data is not included in this repository. After attaching it, run the notebook from top to bottom. The notebook reads from `/kaggle/input` and writes its submission under `/kaggle/working`; update those paths before running locally.
 
 ## Tools
 
